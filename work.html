@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/fa.png" type="image/png" sizes="16x16">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+<style>
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: #ffffff;
+  padding: 5px;
+  width: 230px;
+  height: 50px;
+  margin-top: 10px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+  
+
+
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+
+</head>
+<body class="is-preload">
+
+
+<!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo">Amjad Saeed</a>
+          </header>
+
+        <!-- Nav -->
+          <nav id="nav">
+            <ul class="links">
+              <li ><a href="index.html">Home</a></li>
+              <li class="active"><a href="work.html">My Work</a></li>
+              <li><a href="procedure.html">My Procedure to work</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="icons">
+              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="https://www.facebook.com/wptipsfornewbie" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+              <li><a href="comingsoon.html" target="_blank" class="icon brands fa-wordpress"><span class="label">Blog</span></a></li>
+            </ul>
+          </nav>
+
+
+  <!-- Main -->
+          <div id="main">
+
+
+              <header style="background:linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/workm.jpg);background-size: cover;height: 100vh;" class="post featured">
+  <div class="title">
+    <h2 style="text-transform: capitalize;margin: 0;font-size: 7vw;white-space: nowrap;color: #ffffff">My Latest Work</h2>
+  </div>
+</header>
+
+
+<div id="myBtnContainer flex-container">
+  <button class="flex-item btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="flex-item btn" onclick="filterSelection('fwc')"> Full Website Creation</button>  
+  <button class="flex-item btn" onclick="filterSelection('es')"> Ecommerce Store</button>
+  <button class="flex-item btn" onclick="filterSelection('td')"> Theme Development</button>
+  <button class="flex-item btn" onclick="filterSelection('pd')"> Plugin Development</button>
+  <button class="flex-item btn" onclick="filterSelection('wpb')"> WP Builders</button>
+  <button class="flex-item btn" onclick="filterSelection('wps')"> WordPress Security</button>
+  <button class="flex-item btn" onclick="filterSelection('wpseo')"> WP SEO</button>
+  <button class="flex-item btn" onclick="filterSelection('help')"> Help & Consultation</button>
+</div>
+
+
+
+<section class="posts container">
+
+                <div class="filterDiv fwc es wpb wps wpseo help">
+                  <header>
+                    
+                    <h2><a href="single.html">Restaurant Website with advanced Functionality</a></h2>
+                  </header>
+                  <a href="single.html" class="image fit"><img src="images/featured.jpg" alt="" /></a>
+                  <h5><b>Category : </b>Full website creation | Ecommerce Store | WP Builders | WordPress Security |  WP SEO | Help & Consultation</h5>
+
+                  <ul class="actions special">
+                    <li><a href="single.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+
+                <div class="filterDiv fwc es wpb wps wpseo help">
+                  <header>
+                    
+                    <h2><a href="single.html">E-Commerce Store with advanced Functionality</a></h2>
+                  </header>
+                  <a href="shoutdel.html" class="image fit"><img src="images/shoutdelm.jpg" alt="" /></a>
+                  
+                  <h5><b>Category : </b>Full website creation | Ecommerce Store | WP Builders | WordPress Security |  WP SEO | Help & Consultation</h5>
+
+                  <ul class="actions special">
+                    <li><a href="shoutdel.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+                <div class="filterDiv fwc">
+                  <header>
+                    
+                    <h2><a href="single.html">Front End Development</a></h2>
+                  </header>
+                  <a href="frontend.html" class="image fit"><img src="images/frontm.jpg" alt="" /></a>
+                  
+                  <h5><b>Category : </b>Full website creation</h5>
+
+                  <ul class="actions special">
+                    <li><a href="frontend.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+                <div class="filterDiv fwc wpb help">
+                  <header>
+                    
+                    <h2><a href="single.html">Website</a></h2>
+                  </header>
+                  <a href="socialhardware.html" class="image fit"><img src="images/socialm.jpg" alt="" /></a>
+                  
+                  <h5><b>Category : </b>Full website creation | WP Builders | Help & Consultation</h5>
+
+                  <ul class="actions special">
+                    <li><a href="socialhardware.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+                
+
+                <div class="filterDiv fwc wps wpseo help td pd">
+                  <header>
+                    
+                    <h2><a href="single.html">Theme and Plugin Development</a></h2>
+                  </header>
+                  <a href="uni.html" class="image fit"><img src="images/unim.jpg" alt="" /></a>
+                  
+                  <h5><b>Category : </b>Full website creation | WP SEO | WordPress Security | Theme Development | Plugin Development | Help & Consultation</h5>
+
+                  <ul class="actions special">
+                    <li><a href="uni.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+
+                <div class="filterDiv wps help">
+                  <header>
+                    
+                    <h2><a href="transformational.html">Recover a Hacked WordPress Website</a></h2>
+                  </header>
+                  <a href="transformational.html" class="image fit"><img src="images/web.png" alt="" /></a>
+                    
+                    <h5><b>Category : </b>WordPress Security | Help & Consultation</h5>
+
+                    <ul class="actions special">
+                    <li><a href="transformational.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+
+
+
+
+                <div class="filterDiv wps help">
+                  <header>
+                    
+                    <h2><a href="snsconsultant.html">Recover a Hacked WordPress Website</a></h2>
+                  </header>
+                  <a href="snsconsultant.html" class="image fit"><img src="images/web3.png" alt="" /></a>
+                  
+                  <h5><b>Category : </b>WordPress Security | Help & Consultation</h5>
+                                    
+                  <ul class="actions special">
+                    <li><a href="snsconsultant.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+                
+
+                  <div class="filterDiv wps help">
+                  <header>
+                    
+                    <h2><a href="ronixpolymer.html">Recover a Hacked WordPress Website</a></h2>
+                  </header>
+                  <a href="ronixpolymer.html" class="image fit"><img src="images/web2.png" alt="" /></a>
+                  <h5><b>Category : </b>WordPress Security | Help & Consultation</h5>
+                  <ul class="actions special">
+                    <li><a href="ronixpolymer.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+
+                <div class="filterDiv wps help">
+                  <header>
+                    
+                    <h2><a href="haselcatering.html">Recover a Hacked WordPress Website</a></h2>
+                  </header>
+                  <a href="haselcatering.html" class="image fit"><img src="images/web1.png" alt="" /></a>
+                  <h5><b>Category : </b>WordPress Security | Help & Consultation</h5>
+                  <ul class="actions special">
+                    <li><a href="haselcatering.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+
+                <div class="filterDiv wps help">
+                  <header>
+                    
+                    <h2><a href="digitaladlectio.html">Recover a Hacked WordPress Website</a></h2>
+                  </header>
+                  <a href="digitaladlectio.html" class="image fit"><img src="images/work.jpg" alt="" /></a>
+                  <h5><b>Category : </b>WordPress Security | Help & Consultation</h5>
+                  <ul class="actions special">
+                    <li><a href="digitaladlectio.html" class="button">View in Detail</a></li>
+                  </ul>
+                </div>
+
+
+                
+              </section>
+
+<div class="row shadow-lg p-3 mb-5 bg-white rounded">
+  
+  <div class="col-xs-6 col-xl-12 ">
+  
+<p><i><b>“I think people hire me because I am good at what I love to do.”</b></i><br>
+
+Requesting an estimate for a project only takes a few minutes of your time and costs absolutely nothing. This questionnaire was built to help me identify your needs for the project.
+
+After you click the send button, I will send you an estimate for a review.
+
+</p>
+  </div>
+</div>
+
+</div>
+
+
+
+          <!-- Footer -->
+         <footer id="footer">
+            
+            <section class="split contact  shadow-lg p-3 mb-5 bg-white rounded">
+              <section>
+
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff0vfsVBQC3E9Lllf212Z763ejBuVZosfyX_zTnRW9KbLTXA/viewform?embedded=true" width="640" height="880" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+              </section>
+              <section>
+                <h3>Phone</h3>
+                <p><a href="#">+923061699258</a></p>
+              </section>
+              <section>
+                <h3>Email</h3>
+                <p><a href="#">amjadsaeedmail@gmail.com</a></p>
+              </section>
+              <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                  <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://www.facebook.com/wptipsfornewbie" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                  <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                  <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+              </section>
+            </section>
+          </footer>
+
+
+      </div>
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>  
+
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
+
+
+
